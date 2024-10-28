@@ -202,15 +202,35 @@ const Home = () => {
         {/* ======================== Home Left Start here ============================ */}
         <Left />
         {/* ======================== Home Left End here ============================== */}
-        <div className="w-full lgl:w-8/12 h-[100%] bg-bodyColor rounded-2xl flex justify-center items-center lg:ml-10">
+        <div className="w-full lgl:w-8/12 h-[100%] lg:bg-bodyColor sm:bg-transparent rounded-2xl flex justify-center items-center lg:ml-10">
           {/* ======================== Smaller device content Start ======================== */}
-          <div className="w-full h-full lgl:hidden bg-transparent rounded-2xl flex flex-col gap-6">
-            <About />
-            <Resume />
-            <Projects />
-            <Blog />
-            <Contact />
+          <div className="w-full h-full lgl:hidden bg-transparent rounded-2xl flex flex-col gap-4">
+            {/* About Box */}
+            <div className="w-full h-auto bg-bodyColor rounded-2xl p-6 flex justify-center items-center shadow-md">
+              <About />
+            </div>
+
+            {/* Resume Box */}
+            <div className="w-full h-auto bg-bodyColor rounded-2xl p-6 flex justify-center items-center shadow-md">
+              <Resume />
+            </div>
+
+            {/* Projects Box */}
+            <div className="w-full h-auto bg-bodyColor rounded-2xl p-6 flex justify-center items-center shadow-md">
+              <Projects />
+            </div>
+
+            {/* Blog Box */}
+            <div className="w-full h-auto bg-bodyColor rounded-2xl p-6 flex justify-center items-center shadow-md">
+              <Blog />
+            </div>
+
+            {/* Contact Box */}
+            <div className="w-full h-auto bg-bodyColor rounded-2xl p-6 flex justify-center items-center shadow-md">
+              <Contact />
+            </div>
           </div>
+
           {/* ======================== Smaller device content End ========================== */}
           <div className="w-full h-[96%] hidden lgl:flex justify-center overflow-y-scroll scrollbar-thin scrollbar-thumb-[#646464]">
             {about && (
