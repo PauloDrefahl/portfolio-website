@@ -37,7 +37,7 @@ const Home = () => {
   }, []);
 
   const openPDF = () => {
-    window.open("/Paulo-Drefahl-Software-Engineer-Resume.pdf", "_blank");
+    window.open("./Paulo-Drefahl-Software-Engineer-Resume.pdf", "_blank");
   };
 
   return (
