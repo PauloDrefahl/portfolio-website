@@ -24,7 +24,7 @@ const Left = () => {
 
   // Email handler with pre-filled information
   const handleContactClick = () => {
-    const email = "pdrefahl@fgcu.edu";
+    const email = "pdrefahl.dev@gmail.com";
     const subject = "Contacting You";
     const body = "Hello Paulo,\n\nI would like to discuss...";
 
